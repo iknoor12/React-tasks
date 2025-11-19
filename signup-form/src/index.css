@@ -13,6 +13,41 @@
 
 body {
   margin: 0;
+  display: flex;
+  justify-content: center;
   min-width: 320px;
   min-height: 100vh;
+}
+
+form {
+  width: 20em;
+  margin-top: 3em;
+  padding: 2em 3.5em 4em 3.5em;
+  display: grid;
+  background-color: antiquewhite;
+  border: 1px solid black;
+  border-radius: 2em;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1.3em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #29292f;
+}
+
+label {
+  font-size: 1.3em;
+}
+
+input {
+  padding: 0.5rem;
+  font-size: 1.2em;
 }
