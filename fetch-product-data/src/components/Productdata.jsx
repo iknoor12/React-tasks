@@ -33,9 +33,19 @@ function Productdata() {
 
     return (
         <>
+        <h2>Fetching-Data from API</h2>
         <div style={styles.container}>
             {products.map((product) => (
-                <div style={styles.card} key={product.id}>
+                <div style={styles.card} key={product.id} 
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "scale(1.05)";
+                  e.currentTarget.style.transition = "0.3s ease";
+                  e.currentTarget.style.boxShadow = "0 4px 12px rgba(0,0,0,0.2)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "scale(1)";
+                  e.currentTarget.style.boxShadow = "0 2px 6px rgba(0,0,0,0.1)";
+                }}>
                     <img src={product.image} alt={product.title} style={styles.image} />
                     <h3 style={styles.title}>{product.title}</h3>
                     <p style={styles.desc}>{product.description}</p>
@@ -43,6 +53,7 @@ function Productdata() {
                 </div>
             ))}
         </div>
+        <h2>Thanks for scrolling!</h2>
         </>
     );
 }
