@@ -10,3 +10,130 @@
     animation: logo-spin infinite 20s linear;
   }
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f6f8fa; 
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #444;
+  font-weight: 600;
+}
+
+form {
+  width: 90%;
+  max-width: 550px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: #f8f8ff;
+  font-size: 15px;
+}
+
+form textarea {
+  height: 80px;
+  resize: none;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  background: #89c2d9; 
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #61a5c2;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  width: 95%;
+  margin: 30px auto;
+}
+
+
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card img {
+  height: 180px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  text-align: center;
+  color: #333;
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+  margin: 5px 0;
+}
+
+
+.card button {
+  width: 80%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.card button:nth-child(1) {
+  background: #bde0fe; 
+  color: #03396c;
+}
+
+.card button:nth-child(1):hover {
+  background: #a2d2ff;
+}
+
+.card button:nth-child(2) {
+  background: #ffccd5; 
+  color: #8b1e3f;
+}
+
+.card button:nth-child(2):hover {
+  background: #ffb3c1;
+}
