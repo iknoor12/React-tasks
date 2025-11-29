@@ -102,7 +102,7 @@ function App() {
         onDelete={deleteProduct}
       />
     </div>
-    <ProductCard />
+    
     </>
   )
 }

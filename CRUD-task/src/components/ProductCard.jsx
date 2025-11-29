@@ -11,8 +11,8 @@ const ProductCard = ({product, onEdit, onDelete}) => {
     <div className='card'>
         <img src={imgSrc} alt={title} />
         <h3>{title}</h3>
-        <p>₹ {price}</p>
-        <p>{category}</p>
+        <h3>₹ {price}</h3>
+        <h4>{category}</h4>
         <p>{description}</p>
 
         <button onClick={() => onEdit(product)}>Edit</button>

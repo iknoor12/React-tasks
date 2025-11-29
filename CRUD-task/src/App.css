@@ -82,7 +82,7 @@ form button:hover {
   background: white;
   padding: 16px;
   border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.251);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -90,7 +90,7 @@ form button:hover {
 
 .card img {
   height: 180px;
-  width: auto;
+  width: 130px;
   object-fit: contain;
   margin-bottom: 10px;
 }
@@ -120,20 +120,20 @@ form button:hover {
   transition: 0.3s;
 }
 
-.card button:nth-child(1) {
+.card button:nth-child(6) {
   background: #bde0fe; 
   color: #03396c;
 }
 
-.card button:nth-child(1):hover {
+.card button:nth-child(6):hover {
   background: #a2d2ff;
 }
 
-.card button:nth-child(2) {
+.card button:nth-child(7) {
   background: #ffccd5; 
   color: #8b1e3f;
 }
 
-.card button:nth-child(2):hover {
+.card button:nth-child(7):hover {
   background: #ffb3c1;
 }
