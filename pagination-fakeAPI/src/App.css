@@ -1,0 +1,87 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+/* Overall Page */
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7ff;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #444;
+}
+
+
+/* Container for posts */
+.post-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 60%;
+  margin: 30px auto;
+}
+
+
+/* Individual Post Card */
+.post-card {
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  border-left: 6px solid #bde0fe;
+}
+
+.post-card h3 {
+  margin: 0 0 10px;
+  color: #0f4c81;
+  font-size: 18px;
+}
+
+.post-card p {
+  margin: 0;
+  line-height: 1.5;
+  color: #555;
+}
+
+
+/* Pagination Section */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 25px 0 40px;
+}
+
+.pagination button {
+  padding: 8px 14px;
+  background: #e4e7ff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+  color: #333;
+}
+
+.pagination button:hover {
+  background: #ccd2ff;
+}
+
+.pagination button.active {
+  background: #bde0fe;
+  color: #003049;
+  border: 2px solid #003049;
+}
+
+.pagination button:disabled {
+  background: #ddd;
+  cursor: not-allowed;
+  color: #777;
+}
